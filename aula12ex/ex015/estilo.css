@@ -1,0 +1,33 @@
+body {
+    background: rgb(0, 132, 255);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+    text-align: center;
+}
+
+#foto {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    /* Sombra suave para destacar do fundo branco */
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.4));
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

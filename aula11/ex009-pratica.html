@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSULADO</title>
+</head>
+<body>
+    <h1>Sistema de Imigração</h1>
+    Qual seu país? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtpais = document.querySelector('#txtpais')
+            var res = document.querySelector('#res')
+            var pais = txtpais.value
+            
+            var artigo = 'no'
+            if (pais.endsWith('a') || pais.endsWith('A')) {
+                artigo = 'na'
+            }
+            res.innerHTML = `<p>Você nasceu ${artigo} <strong style="text-transform: capitalize">${pais}</strong>.</p>`
+
+            if (pais.toUpperCase() == 'BRASIL') {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`             
+            } else {
+                res.innerHTML += `<p> Você é estrangeiro</p>`
+            }
+        }
+    </script>
+    
+</body>
+</html>
