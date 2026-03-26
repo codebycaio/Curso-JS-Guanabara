@@ -1,4 +1,4 @@
-let amor = {nome: 'Maria',
+let amor = {nome: 'Maria E.',
 sexo: 'F',
 peso: 58.2,
 engordar(p=0){
